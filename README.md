@@ -4,7 +4,7 @@
 
 axis2的测试 TestAxis2
 
-axis2 初步流程如下
+axis2 初步流程如下(2015-7-2)
 
 1.准备工作
 首先到官网下载Axis2的bin包和war包，名字如下：
@@ -66,8 +66,19 @@ public class HelloServices {
  
  ![](https://raw.githubusercontent.com/lifuz/my_document/master/image/axis2_use_7.png)
  
- NEXT->这里的操作如图所示：
+ NEXT->输入全类名，点击load。这里的操作如图所示：
  
  ![](https://raw.githubusercontent.com/lifuz/my_document/master/image/axis2_use_8.png)
  
-
+ NEXT->输入输出路径和输出名字
+ 
+  ![](https://raw.githubusercontent.com/lifuz/my_document/master/image/axis2_use_9.png)
+  
+  点击finsh结束。
+  
+ 3.2.3 部署到tomcat中
+ 把此aar文件放到%tomcat_home%\webapps\axis2\WEB-INF\services下。浏览器中输入http://localhost:8080/axis2/services/HelloWorldService?wsdl，出现如图所示，说明发布成功。
+ 
+ ![](https://raw.githubusercontent.com/lifuz/my_document/master/image/axis2_use_10.png)
+ 
+ 
