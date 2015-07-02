@@ -10,14 +10,17 @@ axis2 初步流程如下(2015-7-2)
 首先到官网下载Axis2的bin包和war包，名字如下：
 
 axis2-1.6.2-bin.zip
+
 axis2-1.6.2-war.zip
 
 下载地址如下：
 
 http://axis.apache.org/axis2/java/core/download.cgi
+
 到官网下载Eclipse的axis2插件，插件包的名字如下：
 
 axis2-eclipse-service-plugin-1.6.2.zip
+
 axis2-eclipse-codegen-plugin-1.6.2.zip
 
 下载地址如下：
@@ -55,8 +58,8 @@ public class HelloServices {
 		return "Hello," + name;
 	}
 }
-3.1.2
 
+3.1.2
 编译这个类
 
 3.1.3
