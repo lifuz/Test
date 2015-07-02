@@ -24,11 +24,11 @@ public class OracleConnect {
 		// 定义数据库的驱动类
 		driver = "oracle.jdbc.driver.OracleDriver";
 		// 拼接访问的url
-		url = "jdbc:oracle:thin:@121.40.199.67:1521:orcl";
+		url = "jdbc:oracle:thin:@115.29.195.184:1521:orcl";
 		// 设置用户名
-		user = "scott";
+		user = "mcc2";
 		// 设置密码
-		password = "tiger";
+		password = "mcc";
 		// 加载 驱动
 		Class.forName(driver);
 

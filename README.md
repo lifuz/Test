@@ -49,18 +49,25 @@ public class HelloServices {
 
  3.2.2 在eclipse的空白workspace处，右键new->Other,在弹出的对话框中，找到Axis2 Service Archiver,双击->选择
  HelloWorldService所在项目的class路径，如图所示：
+ 
  ![](https://raw.githubusercontent.com/lifuz/my_document/master/image/axis2_use_4.png)
  
  next->选中skip WSDL
+ 
  ![](https://raw.githubusercontent.com/lifuz/my_document/master/image/axis2_use_5.png)
  
  Next->什么都不填(这里填写你用到的一些jar包)
+ 
  ![](https://raw.githubusercontent.com/lifuz/my_document/master/image/axis2_use_6.png)
+ 
  NEXT->选中Generate the service xml automatically(这里是选择service.xml如果你已经定义了这个文件，就可以选择
  自己的定义的文件，如果没有的话，选中Generate the service xml automatically让插件帮你生成的service.xml文件。这里
  让插件生成。)
+ 
  ![](https://raw.githubusercontent.com/lifuz/my_document/master/image/axis2_use_7.png)
+ 
  NEXT->这里的操作如图所示：
+ 
  ![](https://raw.githubusercontent.com/lifuz/my_document/master/image/axis2_use_8.png)
  
 
