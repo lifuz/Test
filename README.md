@@ -17,6 +17,7 @@ axis2-1.6.2-war.zip
 
 http://axis.apache.org/axis2/java/core/download.cgi
 
+
 到官网下载Eclipse的axis2插件，插件包的名字如下：
 
 axis2-eclipse-service-plugin-1.6.2.zip
