@@ -1,0 +1,22 @@
+<serviceGroup>
+<service name="Services2">
+    <description>
+        测试一
+    </description>
+    <parameter name="ServiceClass">com.prd.axis.HelloServices</parameter>
+    <operation name="sayHello">
+    <messageReceiver  class="org.apache.axis2.rpc.receivers.RPCMessageReceiver" />
+    </operation>
+</service>
+
+<service name="Services3">
+    <description>
+        测试二
+    </description>
+    <parameter name="ServiceClass">com.prd.axis.TestGroup</parameter>
+    <operation name="sayName">
+    <messageReceiver  class="org.apache.axis2.rpc.receivers.RPCMessageReceiver" />
+    </operation>
+</service>
+
+</serviceGroup>

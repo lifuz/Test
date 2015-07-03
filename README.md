@@ -120,5 +120,61 @@ public class HelloServices {
  
 ![](https://raw.githubusercontent.com/lifuz/my_document/master/image/axis2_use_10.png)
 
+
+4.实现一个带包的webservice(使用jar文件的形式)
+选中WebService的项目，点击右键，选择export->export->java->jar files如图所示：
+
+![](https://raw.githubusercontent.com/lifuz/my_document/master/image/axis2_use_11.png)
+
+NEXT->选择输出的文件和输出路径
+
+![](https://raw.githubusercontent.com/lifuz/my_document/master/image/axis2_use_12.png)
+
+点击finsh完成
+
  
+5.使用RPC方式调用WebService
+
+5.1具体操作步骤和实现请查看Axis2Client项目
+
+5.2 注意
+
+①：如果调用的WebService方法没有返回值时则不能调用invokeBlocking方法，应该调用invokeRobust方法;
+
+②：如果调用的WebService方法没有参数那么invokeBlocking方法的第二参数，不能为空，应写new Object[]{};
+
+③：客户端会使用很多axis2的jar包，如果不清楚具体应用哪些jar包，则把Axis2的安装目录下lib里的所有的jar都导入；
+
+④：在创建QName对象时，QName类的第一个参数表示wsdl命名空间：targetNamespace="http://axis.prd.com"
+
+6.使用wsdl2java命令生成客户端类
+
+6.1 使用%AXIS2_HOME%/bin/wsdl2java -uri http://localhost:8080/axis2/services/MyService?wsdl 
+-p client -o stub生成客户端文件
+
+-uri 后面是WebService的wsdl路径
+
+-p  client是生成文件的包名
+
+-o  stub 是生成的文件的存放路径
+
+6.2 把生成的文件考到含有Axis2的lib下jar的项目中
+
+6.3 使用客户端文件，代码如下：
+
+//创建客户端类对象
+
+MyServiceStub mss = new MyServiceStub();
+
+//创建要调用的WebService方法的类，作用是设置访问的参数
+
+MyServiceStub.SayHello  method = new MyServiceStub.SayHello();
+
+//设置访问方法的参数
+
+method.setName("李富");
+
+//使用客户端类的WebService方法，并获取返回值
+
+System.out.println(mss.sayHello(method).local_return);
  
